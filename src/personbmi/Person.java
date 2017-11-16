@@ -5,6 +5,8 @@
  */
 package personbmi;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author MERC-LAB-01
@@ -35,6 +37,20 @@ public void calculateBmi (){
         bmi = wt/(ht*ht);
     
     }
+
+public void resultsClazzification (){
+      if (bmi<=18.5){
+      JOptionPane.showMessageDialog(null, "BMI = " + bmi + "  Underweight");
+      }
+      if ((bmi>18.5)&&(bmi<25)){
+          JOptionPane.showMessageDialog(null,"BMI = " + bmi + "  Healthy");
+      }
+      if ((bmi>=25)&&(bmi<=30)){
+          JOptionPane.showMessageDialog(null,"BMI = " + bmi + "  Over Weight");
+      }
+      if (bmi>30){
+          JOptionPane.showMessageDialog(null,"BMI = " + bmi + "  Obese");      }
+}
     
     
     
