@@ -47,6 +47,7 @@ public class PersonBmi {
         p5.ht = Double.parseDouble(JOptionPane.showInputDialog("Hight in m") );
         p5.wt = Double.parseDouble(JOptionPane.showInputDialog("Weight in Kg"));
         p5.calculateBmi();
+        p5.resultsClazzification();
         JOptionPane.showMessageDialog(null,p5.name+"'s BMI is "+p5.bmi);
       
         
