@@ -41,6 +41,14 @@ public class PersonBmi {
        Person p4 = new Person("Gamage", 1.62, 58);
         p4.calculateBmi();
         System.out.println(p4.name+"'s BMI is "+p4.bmi);
+       
+        Person p5 = new Person ();
+        p5.name = JOptionPane.showInputDialog("Name");
+        p5.ht = Double.parseDouble(JOptionPane.showInputDialog("Hight in m") );
+        p5.wt = Double.parseDouble(JOptionPane.showInputDialog("Weight in Kg"));
+        p5.calculateBmi();
+        JOptionPane.showMessageDialog(null,p5.name+"'s BMI is "+p5.bmi);
+      
         
 
 
